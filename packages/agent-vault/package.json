@@ -1,11 +1,14 @@
 {
-  "name": "agent-vault",
+  "name": "@yaow2878/ai-agent-secret-broker",
   "version": "0.1.0",
   "description": "Local-first credential broker for AI coding agents. Let AI agents use secrets without seeing them.",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
     "agent-vault": "dist/cli/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "build": "tsc",
@@ -47,5 +50,13 @@
     "cursor",
     "roo-code",
     "claude"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaow2878/ai-agent-secret-broker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yaow2878/ai-agent-secret-broker/issues"
+  },
+  "homepage": "https://github.com/yaow2878/ai-agent-secret-broker#readme"
 }

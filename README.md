@@ -8,19 +8,7 @@ The core idea is **not** to give encrypted secrets to the AI model. Instead, sec
 
 ## 🚀 Quick Start
 
-### Install via npm
-
-```bash
-npm install -g agent-vault
-```
-
-Or use directly with `npx`:
-
-```bash
-npx agent-vault init
-```
-
-### Or run from source
+### Run from source
 
 ```bash
 cd packages/agent-vault
@@ -32,13 +20,13 @@ npm run build
 
 ```bash
 # 1. Initialize the vault (creates ~/.agent-vault/)
-agent-vault init
+node dist/cli/index.js init
 
 # 2. Add a server (you'll be prompted for credentials)
-agent-vault server add my-server --environment staging --type ssh
+node dist/cli/index.js server add my-server --environment staging --type ssh
 
 # 3. Start the MCP server (for AI agent integration)
-agent-vault mcp start
+node dist/cli/index.js mcp start
 ```
 
 > 📖 See the full [Usage Guide](packages/agent-vault/USAGE_GUIDE.md) for detailed instructions, Docker-based experiments, and MCP integration with Cursor, Roo Code, and Claude Desktop.
@@ -89,23 +77,6 @@ All **39 security and utility tests pass** — 30 original SSH tests + 9 new API
 > Run experiments yourself: `cd packages/agent-vault && npx tsx experiments/run_all_experiments.ts`
 >
 > Generate charts: `cd packages/agent-vault && npx tsx experiments/generate_charts.ts`
-
----
-
-## 📦 Publishing
-
-This package is published to **npm** as [`agent-vault`](https://www.npmjs.com/package/agent-vault).
-
-```bash
-# Build
-cd packages/agent-vault
-npm run build
-
-# Publish to npm
-npm publish
-```
-
-> **Note**: The package is configured with `"private": false` (default) and a `prepublishOnly` script that runs `npm run build` automatically. Make sure you're logged in to npm (`npm login`) before publishing.
 
 ---
 
