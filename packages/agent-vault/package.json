@@ -1,0 +1,51 @@
+{
+  "name": "agent-vault",
+  "version": "0.1.0",
+  "description": "Local-first credential broker for AI coding agents. Let AI agents use secrets without seeing them.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "agent-vault": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "experiment": "tsx experiments/run_all_experiments.ts",
+    "charts": "tsx experiments/generate_charts.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "commander": "^13.1.0",
+    "enquirer": "^2.4.1",
+    "nanoid": "^5.1.0",
+    "sharp": "^0.34.5",
+    "ssh2": "^1.16.0",
+    "tweetnacl": "^1.0.3",
+    "tweetnacl-util": "^0.15.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "@types/ssh2": "^1.15.4",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ai",
+    "security",
+    "credentials",
+    "mcp",
+    "secret-broker",
+    "cursor",
+    "roo-code",
+    "claude"
+  ]
+}

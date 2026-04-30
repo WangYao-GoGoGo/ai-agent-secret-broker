@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0c1222"/>
+    </linearGradient>
+    <linearGradient id="pass-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <linearGradient id="fail-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <linearGradient id="security-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="utility-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)" rx="12"/>
+  <text x="24" y="36" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#e2e8f0">Overall Results</text>
+    <path d="M 140 150 L 140 70 A 80 80 0 1 1 139.99999999999997 70 Z" fill="url(#pass-grad)" opacity="0.9"/>
+    <circle cx="140" cy="150" r="50" fill="#1e293b"/>
+    <text x="140" y="142" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="800" fill="#e2e8f0">100%</text>
+    <text x="140" y="166" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">pass rate</text>
+    <rect x="250" y="112" width="12" height="12" rx="3" fill="#22c55e"/>
+    <text x="270" y="122" font-family="system-ui, sans-serif" font-size="13" fill="#e2e8f0">Pass (39)</text>
+    <rect x="250" y="140" width="12" height="12" rx="3" fill="#ef4444"/>
+    <text x="270" y="150" font-family="system-ui, sans-serif" font-size="13" fill="#e2e8f0">Fail (0)</text>
+    <rect x="250" y="168" width="12" height="12" rx="3" fill="#3b82f6"/>
+    <text x="270" y="178" font-family="system-ui, sans-serif" font-size="13" fill="#e2e8f0">Info (0)</text>
+</svg>

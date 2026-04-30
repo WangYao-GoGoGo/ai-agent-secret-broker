@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0c1222"/>
+    </linearGradient>
+    <linearGradient id="pass-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <linearGradient id="fail-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <linearGradient id="security-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="utility-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="500" height="300" fill="url(#bg)" rx="12"/>
+  <text x="24" y="36" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#e2e8f0">Dangerous Command Blocking</text>
+    <text x="30" y="52" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">COMMAND</text>
+    <text x="380" y="52" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">BLOCKED</text>
+    <rect x="22" y="46" width="440" height="24" rx="4" fill="white" opacity="0.03"/>
+    <text x="30" y="60" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">rm -rf root</text>
+    <rect x="400" y="50" width="62" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="431" y="63" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">BLOCKED</text>
+    <text x="30" y="84" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">rm -rf app directory</text>
+    <rect x="400" y="74" width="62" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="431" y="87" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">BLOCKED</text>
+    <rect x="22" y="94" width="440" height="24" rx="4" fill="white" opacity="0.03"/>
+    <text x="30" y="108" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">Read SSH private key</text>
+    <rect x="400" y="98" width="62" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="431" y="111" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">BLOCKED</text>
+    <text x="30" y="132" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">chmod 777 recursive</text>
+    <rect x="400" y="122" width="62" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="431" y="135" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">BLOCKED</text>
+    <rect x="22" y="142" width="440" height="24" rx="4" fill="white" opacity="0.03"/>
+    <text x="30" y="156" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">curl pipe bash</text>
+    <rect x="400" y="146" width="62" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="431" y="159" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">BLOCKED</text>
+    <text x="30" y="180" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">wget pipe sh</text>
+    <rect x="400" y="170" width="62" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="431" y="183" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">BLOCKED</text>
+    <rect x="22" y="190" width="440" height="24" rx="4" fill="white" opacity="0.03"/>
+    <text x="30" y="204" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">Print environment variables</text>
+    <rect x="400" y="194" width="62" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="431" y="207" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">BLOCKED</text>
+    <text x="30" y="228" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">Print env</text>
+    <rect x="400" y="218" width="62" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="431" y="231" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">BLOCKED</text>
+
+</svg>

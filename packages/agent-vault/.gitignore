@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.local
+.vault/
+*.log
+
+# Test vault data (auto-generated during experiments)
+.test-vault/

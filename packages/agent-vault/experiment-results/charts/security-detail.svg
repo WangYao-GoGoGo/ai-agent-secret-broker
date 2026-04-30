@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0c1222"/>
+    </linearGradient>
+    <linearGradient id="pass-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <linearGradient id="fail-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <linearGradient id="security-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="utility-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)" rx="12"/>
+  <text x="24" y="36" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#e2e8f0">Security Test Results</text>
+    <text x="30" y="52" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">TEST</text>
+    <text x="380" y="52" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">STATUS</text>
+    <rect x="22" y="46" width="540" height="22" rx="4" fill="white" opacity="0.03"/>
+    <text x="30" y="60" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-1: No secret-reveal tools exist</text>
+    <rect x="400" y="50" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="63" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+    <text x="30" y="82" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-1: list_servers does not expose secrets</text>
+    <rect x="400" y="72" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="85" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+    <rect x="22" y="90" width="540" height="22" rx="4" fill="white" opacity="0.03"/>
+    <text x="30" y="104" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-4: Block "rm -rf root"</text>
+    <rect x="400" y="94" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="107" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+    <text x="30" y="126" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-4: Block "rm -rf app directory"</text>
+    <rect x="400" y="116" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="129" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+    <rect x="22" y="134" width="540" height="22" rx="4" fill="white" opacity="0.03"/>
+    <text x="30" y="148" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-4: Block "Read SSH private key"</text>
+    <rect x="400" y="138" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="151" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+    <text x="30" y="170" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-4: Block "chmod 777 recursive"</text>
+    <rect x="400" y="160" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="173" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+    <rect x="22" y="178" width="540" height="22" rx="4" fill="white" opacity="0.03"/>
+    <text x="30" y="192" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-4: Block "curl pipe bash"</text>
+    <rect x="400" y="182" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="195" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+    <text x="30" y="214" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-4: Block "wget pipe sh"</text>
+    <rect x="400" y="204" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="217" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+    <rect x="22" y="222" width="540" height="22" rx="4" fill="white" opacity="0.03"/>
+    <text x="30" y="236" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-4: Block "Print environment variables"</text>
+    <rect x="400" y="226" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="239" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+    <text x="30" y="258" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-4: Block "Print env"</text>
+    <rect x="400" y="248" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="261" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+    <rect x="22" y="266" width="540" height="22" rx="4" fill="white" opacity="0.03"/>
+    <text x="30" y="280" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-5: Redact Private IP</text>
+    <rect x="400" y="270" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="283" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+    <text x="30" y="302" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-5: Redact Public IP</text>
+    <rect x="400" y="292" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="305" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+    <rect x="22" y="310" width="540" height="22" rx="4" fill="white" opacity="0.03"/>
+    <text x="30" y="324" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-5: Redact Email</text>
+    <rect x="400" y="314" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="327" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+    <text x="30" y="346" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-5: Redact JWT</text>
+    <rect x="400" y="336" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="349" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+    <rect x="22" y="354" width="540" height="22" rx="4" fill="white" opacity="0.03"/>
+    <text x="30" y="368" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-5: Redact AWS Key</text>
+    <rect x="400" y="358" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="371" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+    <text x="30" y="390" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-5: Redact GitHub Token</text>
+    <rect x="400" y="380" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="393" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+    <rect x="22" y="398" width="540" height="22" rx="4" fill="white" opacity="0.03"/>
+    <text x="30" y="412" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-5: Redact DB Password</text>
+    <rect x="400" y="402" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="415" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+    <text x="30" y="434" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-5: Redact SSH Key</text>
+    <rect x="400" y="424" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="437" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+    <rect x="22" y="442" width="540" height="22" rx="4" fill="white" opacity="0.03"/>
+    <text x="30" y="456" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-5: Redact Generic Token</text>
+    <rect x="400" y="446" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="459" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+    <text x="30" y="478" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0">ST-5: Uses semantic placeholders</text>
+    <rect x="400" y="468" width="52" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+    <text x="426" y="481" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#22c55e">PASS</text>
+
+</svg>

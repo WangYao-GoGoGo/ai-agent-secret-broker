@@ -1,0 +1,46 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+**/.DS_Store
+
+# Environment / secrets (user-local)
+.env
+.env.local
+.env.*.local
+
+# Vault data (user-local, created at runtime)
+.vault/
+~/.agent-vault/
+
+# Logs
+*.log
+
+# Temp
+tmp/
+temp/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+VENV/
+
+# Database files
+*.sqlite3
+*.db
+
+# Test vault data (auto-generated during experiments)
+.test-vault/
